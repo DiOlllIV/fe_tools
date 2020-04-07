@@ -6,7 +6,10 @@
         "test": "jest",
         "test:watch": "jest --watch",
         "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
-        "copy": "Copy-Item ./src/index.html ./dist/index.html"
+        "copy:html": "cp ./src/index.html ./dist/index.html",
+        "copy:scripts": "cp -R ./src/scripts ./dist/scripts",
+        "clean": "rm -rf ./dist",
+        "build": "npm-run-all clean build:styles copy:html copy:*"
     },
     "keywords": [],
     "author": "",
@@ -14,6 +17,7 @@
     "devDependencies": {
         "@babel/preset-env": "^7.9.0",
         "jest": "^25.2.7",
+        "npm-run-all": "^4.1.5",
         "sass": "^1.26.3"
     },
     "description": ""
