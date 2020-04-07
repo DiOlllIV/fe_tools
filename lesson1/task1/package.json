@@ -1,17 +1,20 @@
 {
-  "name": "task1",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/preset-env": "^7.9.0",
-    "jest": "^25.2.7"
-  },
-  "description": ""
+    "name": "task1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
+        "copy": "Copy-Item ./src/index.html ./dist/index.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/preset-env": "^7.9.0",
+        "jest": "^25.2.7",
+        "sass": "^1.26.3"
+    },
+    "description": ""
 }
