@@ -46,7 +46,7 @@ body {
 .list-item_done {
   opacity: 0.7;
 }
-.list-item span {
+.list-item_done span {
   text-decoration: line-through;
 }
 .list-item:last-child {
